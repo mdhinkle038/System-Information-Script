@@ -11,6 +11,7 @@
 
 #Sender EMAIL
 $emailusername = "user_email@gmail.com"
+#Encrpyted password
 $encrypted = Get-Content c:\Users\user_name\Documents\Tools\ToolCred.txt | ConvertTo-SecureString
 $credential = New-Object System.Management.Automation.PsCredential($emailusername, $encrypted)
 
